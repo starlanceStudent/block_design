@@ -3,6 +3,12 @@
 /* сбрасываем стандартные стили для браузеров */
 body {
 	margin: 0;
+	/*background: -webkit-linear-gradient(180deg, rgb(0, 186, 144) 46%, rgb(53, 72, 73));
+	background: -moz-linear-gradient(180deg, rgb(0, 186, 144) 46%, rgb(53, 72, 73));
+	background: linear-gradient(180deg, rgb(0, 186, 144) 46%, rgb(53, 72, 73));*/
+
+	background: url('https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_Minecraft.jpg') center;
+	background-attachment: fixed;
 }
 
 a {
@@ -64,6 +70,10 @@ header nav a:hover {
 	background: #fff;
 }
 
+main {
+	overflow: hidden; /* пишем для родителя внитри которого есть float  */
+}
+
 
 
 /* header styles END */
@@ -86,3 +96,80 @@ header nav a:hover {
 	width: 100%;
 }
 /* main styles END */
+
+/* footer */
+
+footer {
+	background: #424242;
+	padding: 50px 0;
+}
+
+footer p {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	color: #ddd;
+}
+
+footer p:last-child {
+	margin-top: 20px;
+}
+
+footer p span {
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+
+/* NEWS PAGE START  */
+
+h2 {
+	text-align: center;
+}
+
+.news_item {
+	width: 200px;
+	height: 400px;
+	float: left;
+	border-right: 1px solid #424242;
+	border-top: 1px solid #424242;
+	border-left: 1px solid #424242;
+	transition: .09s ease-in-out;
+	opacity: .8;
+}
+
+.news_item:hover {
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border-style: dotted;
+	transition: .09s ease-in-out;
+	opacity: 1;
+}
+
+.news_item img {
+	display: block;
+	width: 100%;
+}
+
+.news_item p {
+	font-size: 12px;
+}
+
+.news_item h3, .news_item p, .news_item a {
+	padding: 0 15px;
+}
+
+.news_item a {
+	color: #424242;
+	font-size: 25px;
+}
+
+.news_item a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* NEWS PAGE END  */
