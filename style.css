@@ -27,7 +27,7 @@ li {
 * {
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
-	transition: .3s ease-in-out
+	/*transition: .3s ease-in-out*/
 }
 
 /* сбрасываем стандартные стили для браузеров */
@@ -198,7 +198,7 @@ h2 {
 #contacts_page_main section aside {
 	width: 510px;
 	float: left;
-	border: 1px solid #000;
+	
 	margin: 0 0 0 40px;
 	padding: 20px;
 }
@@ -207,28 +207,107 @@ h2 {
 	margin: 0;
 }
 
+#contacts_page_main section aside ul li {
+	font-size: 20px;
+}
+
+#contacts_page_main section aside ul li a {
+	color: green;
+	font-weight: bold;
+	padding: 2px;
+}
+
+#contacts_page_main section aside ul li a:hover {
+	background: #000;
+}
+
+#social_btns {
+	margin: 40px 0 0 0;
+}
+
 #social_btns a {
 	display: block;
 	float: left;
 	margin: 0 20px 0 0;
-	background: skyblue;
-	color: #fff;
+	background: #000;
+	color: yellow;
 	padding: 10px;
 	width: 50px;
 	overflow: hidden;
 	height: 50px;
 	border-radius: 50%;
+	transition: .1s ease-in-out;
+	border: 1px solid transparent;
 }
 
 #social_btns a:hover {
-	background: #fff;
+	color: #000;
+	background: white;
+	transition: .1s ease-in-out;
+	border: 1px solid #000;
 }
-
-#social_btns a img, #social_btns svg {
-	display: block;
-	width: 100%;
-}
-
 
 
 /*  CONTACTS PAGE END  */
+
+
+
+
+/* CART PAGE START  */
+
+#products_list_block {
+	width: 800px;
+	height: 500px;
+	background: red;
+	float: left;
+}
+
+#order_form_block {
+	width: 400px;
+	height: 500px;
+	background: green;
+	float: left;
+}
+
+.product_card {
+	width: 100%;
+	overflow: hidden;
+	background: yellow;
+	padding: 15px;
+}
+
+.product_card img {
+	display: block;
+	width: 20%;
+	float: left;
+}
+
+.product_detail {
+	width: 60%;
+	float: left;
+	padding: 0 0 0 15px;
+}
+
+.btns_block {
+	width: 20%;
+	float: left;
+	padding: 30px 0 0 0;
+}
+
+.btns_block a {
+	display: block;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto 15px auto;
+	background: #000;
+	color: #fff;
+	padding: 10px;
+}
+
+.btns_block a:last-child {
+	background: red;
+}
+
+
+
+/* CART PAGE END  */
